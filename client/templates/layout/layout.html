@@ -16,6 +16,12 @@
   						<div class="item signOut" onclick="logout();">
               	Sign out
               </div>
+	              {{#if faceTaggingOutput}}
+	  							<div class="item" onclick="savePicture();">
+	  							 <i class="fa fa-save"
+	  							 style="padding-right: 10px;"></i> Save
+	  							</div>
+	              {{/if}}
 	         
 							{{else}}
 							<div class="item signIn" onclick="login();">
