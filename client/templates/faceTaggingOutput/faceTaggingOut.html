@@ -1,0 +1,94 @@
+<Template name="faceTaggingOutput">
+	{{#contentFor "headerButtonLeft"}}
+	  {{>ionNavBackButton}}
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+	  <h1 class="title">Face Tagging</h1>
+	{{/contentFor}}
+
+		{{#ionView}}
+		  {{#ionContent class="dark-background"}}
+
+					<img src="{{sessionImage}}" class="session-image" id="display">
+					
+					{{#each face}}
+						
+						
+						 <div style="position:absolute; width:{{width}}px; height:{{calculateHeight}}px; ;z-index:5; left:{{positionX}}px; top:{{calculateTop}}px ;
+						 background-image: url(/images/face_tagging_output/bar.png);
+						 background-repeat: no-repeat;
+						  background-size: auto 100%;" class="animated slideInUp">
+						  {{#if identity}}
+								<span class="{{genderDecorate}}">{{identity.name}}</span>
+						  {{else}}
+						 	<span class="gender {{genderDecorate}}">{{gender.gender}}</span>
+						 	<span class="age light">{{age.ageRange}}</span>
+						 	{{/if}}
+						 </div>
+
+						  <!-- added label by user || doesnt look good--> 
+						<!--   <div style="position:absolute; width:{{width}}px; height:{{calculateHeight}}px; ;z-index:5; left:{{positionX}}px; top:{{calculateTopNameTag}}px ;
+						  background-image: url(/images/face_tagging_output/name_background.png);
+						  background-repeat: no-repeat;
+						   background-size: auto 100%;">
+						  
+						 		<span class="name text-center">{{name}}</span>
+
+						  </div> -->
+
+					<div style="width: {{width}}px; height: {{height}}px; top: {{positionY}}px ;left: {{positionX}}px;" class="detected-face animated zoomIn">	
+					<!-- svg border only works on chrome for some reason. using png here -->
+
+						<img src="/images/face_tagging_output/outer_border.png" class="outer-border">		
+						<img src="/images/face_tagging_output/inner_border.png" class="inner-border">
+					
+					
+
+						   
+					</div>
+					{{/each}}
+
+						{{#if selectedFace}}
+
+						{{#with selectedFace}}
+
+					    {{#ionItem class="animated fadeIn"}}
+								{{#if identity}}
+								{{#with identity}}
+						      <h2>{{name}}</h2>
+						      <br>
+						      <p class="tags calm">Tags</p>
+						      <p>{{subType}}</p>
+								{{/with}}
+								{{else}}
+									<p>
+										{{name}}
+									</p>
+									<button style="float: right;" class="button button-outline button-royal"
+									data-ion-modal="editTagModal">
+									  <i class="fa fa-pencil-square-o edit-tag"></i>
+									</button>
+					      {{/if}}	
+
+					      <h3>Confidence</h3>
+					      <p>age: {{age.score}}</p>		
+					      <p>gender: {{gender.score}}</p> 
+
+					    {{/ionItem}}
+					  {{/with}}
+
+					  {{else}}
+						{{#if face}}
+					  	{{#ionItem}}
+					  	  <h2>Click a face for more info</h2>		  	
+
+					  	{{/ionItem}}
+					  {{/if}}
+
+					  {{/if}}
+
+		  {{/ionContent}}
+		{{/ionView}}
+
+</Template>

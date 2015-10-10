@@ -16,7 +16,7 @@ Template.faceTagging.events({
        getPicture({
    /*    width: 350,
          height: 350,*/
-         quality: 100,
+         quality: 80,
          sourceType: Camera.PictureSourceType.PHOTOLIBRARY
        });
      } else {
@@ -27,7 +27,7 @@ Template.faceTagging.events({
      getPicture({
       /* width: 350,
        height: 350,*/
-       quality: 100
+       quality: 80
      });
    }
 });

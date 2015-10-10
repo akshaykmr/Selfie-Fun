@@ -1,0 +1,50 @@
+.session-image{
+	width:100%;
+	height: auto;
+}
+
+.dark-background{
+	background-color: #000000;
+}
+
+.detected-face{
+	position:absolute;
+	z-index:5;
+}
+
+.outer-border{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 6;
+
+}
+
+.inner-border{
+	position: absolute;
+	margin-top: 2%;
+	margin-left: 2%;
+	width: 96%;
+	height: 96%;
+}
+
+
+.gender{
+	width: 60%;
+	margin-top: 5px;
+	margin-left: 5px;
+  font-family : Open Sans;
+  font-weight : bold;
+}
+
+.age{
+	width: 40%
+	float: right;
+	margin-top: 5px;
+  padding-right: 10px;
+  font-family : Open Sans;
+}
+
+.name{
+	color: #99e9ff;
+}
