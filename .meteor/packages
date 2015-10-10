@@ -30,3 +30,6 @@ meteorhacks:npm
 npm-container
 alchemy
 mdg:camera
+service-configuration
+accounts-base
+accounts-password
