@@ -22,8 +22,8 @@ var mapDimensions= function(face){
 	var display = getDisplayDimensions();
 	var ratio = (original.height / display.height);
 
-	face.height = Math.round(face.height/(ratio*0.85));//bigger box
-	face.width = Math.round(face.width/(ratio*0.85));
+	face.height = Math.round(face.height/(ratio*0.9));//bigger box
+	face.width = Math.round(face.width/(ratio*0.9));
 	face.positionX = Math.round(face.positionX/ratio);
 	face.positionY = Math.round(face.positionY/ratio);
 
@@ -49,6 +49,18 @@ Template.faceTaggingOutput.helpers({
 	}
 });
 
+var loadingTemplate='<div class="sk-cube-grid">' //ugly
+  +'<div class="sk-cube sk-cube1"></div>'
+  +'<div class="sk-cube sk-cube2"></div>'
+  +'<div class="sk-cube sk-cube3"></div>'
+  +'<div class="sk-cube sk-cube4"></div>'
+  +'<div class="sk-cube sk-cube5"></div>'
+  +'<div class="sk-cube sk-cube6"></div>'
+  +'<div class="sk-cube sk-cube7"></div>'
+  +'<div class="sk-cube sk-cube8"></div>'
+  +'<div class="sk-cube sk-cube9"></div>'
++'</div>';
+
 Template.faceTaggingOutput.onCreated(function(){
 
 	Faces.remove({});
@@ -57,7 +69,8 @@ Template.faceTaggingOutput.onCreated(function(){
 });
 
 Template.faceTaggingOutput.onRendered(function(){
-	IonLoading.show({backdrop: true});
+	IonLoading.show({backdrop: true,
+									 customTemplate: loadingTemplate});
 	Meteor.call('fetchFaces',Session.get('image'),function(err,response){
 		console.log(response);
 		Session.set('gotResults',true);
