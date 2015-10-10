@@ -22,8 +22,8 @@ var mapDimensions= function(face){
 	var display = getDisplayDimensions();
 	var ratio = (original.height / display.height);
 
-	face.height = Math.round(face.height/ratio);
-	face.width = Math.round(face.width/ratio);
+	face.height = Math.round(face.height/(ratio*0.85));//bigger box
+	face.width = Math.round(face.width/(ratio*0.85));
 	face.positionX = Math.round(face.positionX/ratio);
 	face.positionY = Math.round(face.positionY/ratio);
 

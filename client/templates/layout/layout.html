@@ -13,13 +13,14 @@
 	              {{> ionIcon icon="ios-arrow-left"}} Close Me
 	            </div>
 	            {{#if currentUser}}
-  						<div class="item signOut" onclick="Meteor.logout()">
+  						<div class="item signOut" onclick="logout();">
               	Sign out
               </div>
 	         
 							{{else}}
-							<div class="item signIn" onclick="Meteor.loginWithTwitter()">
-							 Sign in
+							<div class="item signIn" onclick="login();">
+							 <i class="fa fa-twitter fa-2x calm"
+							 style="padding-right: 10px;"></i> Sign in
 							</div>
 	            {{/if}}
 
@@ -33,7 +34,7 @@
 
 	    {{#ionSideMenuContent}}
 
-        {{>ionNavBar}}
+        {{>ionNavBar class=getBarStyle}}
 
 	      {{#ionNavView}}
 	        {{> yield}}
