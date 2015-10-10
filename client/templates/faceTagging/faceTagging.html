@@ -1,0 +1,40 @@
+<Template name="faceTagging">
+	{{#contentFor "headerButtonLeft"}}
+	  {{>ionNavBackButton path="home" text="Home"}}
+	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+	  <h1 class="title">Face Tagging</h1>
+	{{/contentFor}}
+
+	{{#ionView}}
+	  {{#ionContent}}
+     <div class="photo-library">     		
+     		<div class="row">
+     			<div class="col col-33 col-offset-33">
+     				<img src="/images/face_tagging/photo_library.svg" class="test-svg lib">         				
+     			</div>
+     		</div>
+     		<div class="row">
+					<div class="col text-center lighter-text">
+         			Photo Library
+         	</div>
+     		</div>				
+     </div>  
+     <div class="capture-photo">
+     		<div class="row">
+     			<div class="col col-33 col-offset-33">
+     				<img src="/images/face_tagging/capture_photo.svg" class="test-svg cap">         				
+     			</div>
+     		</div>	
+     		<div class="row">
+					<div class="col text-center lighter-text">
+         			Capture a photo
+         	</div>   
+     		</div> 						      	
+     </div>
+
+
+	  {{/ionContent}}
+	{{/ionView}}
+</Template>

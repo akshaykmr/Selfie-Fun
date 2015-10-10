@@ -1,0 +1,27 @@
+.photo-library{
+	height: 50%;
+}
+
+.capture-photo{
+	height: 50% ;
+}
+
+.header-text{
+  font-family : Open Sans;
+  font-size : 34px;
+  line-height : 48px;
+  color: #9b9b9b;
+}
+
+.test-svg{
+	width: 100%;
+	height: auto;
+}
+
+.lighter-text{
+	color: #959595;
+}
+
+.lib{
+	margin-top: 30px;
+}
