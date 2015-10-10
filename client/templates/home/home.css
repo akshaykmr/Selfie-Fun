@@ -1,0 +1,23 @@
+.face-tagging{
+   height: 40%;
+   background-color: #fdc233;
+}
+
+.login{
+   height: 60% ;
+   background-color: #138fc8;
+}
+
+.header-text{
+  font-family : Open Sans;
+  font-size: 1.2em;
+  color : #FFFFFF;
+  color : rgb(255, 255, 255);
+}
+
+.face-svg{
+   width: 100%;
+   max-width: 180px;
+   height: auto;
+
+}
