@@ -50,6 +50,8 @@ localstorage@1.0.5
 logging@1.0.8
 meteor@1.1.9
 meteor-base@1.0.1
+meteorhacks:async@1.0.0
+meteorhacks:npm@1.5.0
 meteoric:ionic@0.1.19
 meteoric:ionic-sass@0.1.9
 meteoric:ionicons-sass@0.1.6
