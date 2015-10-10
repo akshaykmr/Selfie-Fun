@@ -33,3 +33,11 @@ mdg:camera
 service-configuration
 accounts-base
 accounts-password
+
+
+meteorhacks:async
+fortawesome:fontawesome
+juliancwirko:s-alert
+juliancwirko:s-alert-flip
+juliancwirko:s-alert-scale
+natestrauser:animate-css

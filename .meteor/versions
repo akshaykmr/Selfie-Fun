@@ -30,6 +30,7 @@ ejson@1.0.7
 email@1.0.7
 es5-shim@4.1.13
 fastclick@1.0.7
+fortawesome:fontawesome@4.4.0
 fourseven:scss@2.1.1
 geojson-utils@1.0.4
 hot-code-push@1.0.0
@@ -47,6 +48,9 @@ iron:middleware-stack@1.0.11
 iron:router@1.0.12
 iron:url@1.0.11
 jquery@1.11.4
+juliancwirko:s-alert@3.1.1
+juliancwirko:s-alert-flip@3.1.0
+juliancwirko:s-alert-scale@3.1.0
 launch-screen@1.0.4
 less@2.5.0_3
 livedata@1.0.15
@@ -66,6 +70,7 @@ mobile-experience@1.0.1
 mobile-status-bar@1.0.6
 mongo@1.1.2
 mongo-id@1.0.1
+natestrauser:animate-css@3.4.0
 npm-bcrypt@0.7.8_2
 npm-container@1.2.0
 npm-mongo@1.4.39_1
