@@ -7,10 +7,29 @@
 
 	      {{#ionSideMenu side="right"}}
 
+	        <div class="content has-header">
+	          <div class="list">
+	            <div class="item item-icon-left" data-ion-menu-close>
+	              {{> ionIcon icon="ios-arrow-left"}} Close Me
+	            </div>
+	            {{#if currentUser}}
+  						<div class="item signOut" onclick="Meteor.logout()">
+              	Sign out
+              </div>
+	         
+							{{else}}
+							<div class="item signIn" onclick="Meteor.loginWithTwitter()">
+							 Sign in
+							</div>
+	            {{/if}}
+
+	          </div>
+	        </div>
+
 	      {{/ionSideMenu}}
 
 	    {{/ionSideMenus}}
-	    
+
 
 	    {{#ionSideMenuContent}}
 
