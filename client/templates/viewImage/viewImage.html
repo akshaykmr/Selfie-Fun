@@ -19,14 +19,15 @@
 						 background-image: url(/images/face_tagging_output/bar.png);
 						 background-repeat: no-repeat;
 						  background-size: auto 100%;" class="animated slideInUp">
-						  {{#if identity}}
-								<span class="{{genderDecorate}}">{{identity.name}}</span>
-						  {{else}}
-						  {{#if notManyFaces}}
-							 	<span class="gender {{genderDecorate}}">{{gender.gender}}</span>
-							 	<span class="age light" style="padding-left: 5px">{{age.ageRange}}</span>
-							{{/if}}
+						   {{#if notManyFaces}}
+						   {{#if identity}}
+						 		<span class="{{genderDecorate}}">{{identity.name}}</span>
+						   {{else}}
+						  
+						 	 	<span class="gender {{genderDecorate}}">{{gender.gender}}</span>
+						 	 	<span class="age light" style="padding-left: 5px">{{age.ageRange}}</span>
 						 	{{/if}}
+						  	{{/if}}
 						 </div>
 
 					<div style="width: {{width}}px; height: {{height}}px; top: {{positionY}}px ;left: {{positionX}}px;" class="detected-face animated zoomIn">	
