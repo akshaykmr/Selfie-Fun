@@ -1,4 +1,4 @@
-<Template name="faceTaggingOutput">
+<template name="viewImage">
 	{{#contentFor "headerButtonLeft"}}
 	  {{>ionNavBackButton}}
 	{{/contentFor}}
@@ -10,7 +10,7 @@
 		{{#ionView}}
 		  {{#ionContent class="dark-background"}}
 
-					<img src="{{sessionImage}}" class="session-image" id="display">
+					<img src="{{viewImage}}" class="session-image" id="display">
 					
 					{{#each face}}
 						
@@ -28,16 +28,6 @@
 							{{/if}}
 						 	{{/if}}
 						 </div>
-
-						  <!-- added label by user || doesnt look good--> 
-						<!--   <div style="position:absolute; width:{{width}}px; height:{{calculateHeight}}px; ;z-index:5; left:{{positionX}}px; top:{{calculateTopNameTag}}px ;
-						  background-image: url(/images/face_tagging_output/name_background.png);
-						  background-repeat: no-repeat;
-						   background-size: auto 100%;">
-						  
-						 		<span class="name text-center">{{name}}</span>
-
-						  </div> -->
 
 					<div style="width: {{width}}px; height: {{height}}px; top: {{positionY}}px ;left: {{positionX}}px;" class="detected-face animated zoomIn">	
 					<!-- svg border only works on chrome for some reason. using png here -->
@@ -67,10 +57,6 @@
 									<p>
 										{{name}}
 									</p>
-									<button style="float: right;" class="button button-outline button-royal"
-									data-ion-modal="editTagModal">
-									  <i class="fa fa-pencil-square-o edit-tag"></i>
-									</button>
 					      {{/if}}	
 
 					      <h3>Age detected</h3>
@@ -93,5 +79,4 @@
 
 		  {{/ionContent}}
 		{{/ionView}}
-
-</Template>
+</template>

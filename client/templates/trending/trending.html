@@ -1,0 +1,30 @@
+<template name="trending">
+	{{#if Template.subscriptionsReady}}
+		{{#if noPictures}}
+
+			<div class="light-text">no pictures...</div>
+		{{else}}
+		{{#each picture}}
+		<div class="list card">
+
+		  <div class="item item-body">
+		    <img class="full-image viewImage" src="{{src}}">
+		    <p>
+		      {{description}}
+		    </p>
+		    <p>
+		      <a href="#" class="subdued like">{{score}} <i class="fa fa-thumbs-o-up"></i> Like</a>
+		    </p>
+		  </div>
+		</div>
+		{{/each}}
+		{{/if}}
+	{{else}}
+		<div class="row row-center">
+			<div class="col col-33 col-offset-33">
+				{{>loading}}         				
+			</div>
+		</div>
+	{{/if}}
+
+</template>

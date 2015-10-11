@@ -22,6 +22,16 @@
 	  							 style="padding-right: 10px;"></i> Save
 	  							</div>
 	              {{/if}}
+
+	              {{#if home}}
+									<div class="item" onclick="setDuration(1);">
+									 Today
+									</div>
+									<div class="item" onclick="setDuration(7);">
+									 Week
+									</div>
+
+	              {{/if}}
 	         
 							{{else}}
 							<div class="item signIn" onclick="login();">

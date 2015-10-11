@@ -22,8 +22,8 @@ var mapDimensions= function(face){
 	var display = getDisplayDimensions();
 	var ratio = (original.height / display.height);
 
-	face.height = Math.round(face.height/(ratio*0.9));//bigger box
-	face.width = Math.round(face.width/(ratio*0.9));
+	face.height = Math.round(face.height/(ratio*0.95));//bigger box
+	face.width = Math.round(face.width/(ratio*0.95));
 	face.positionX = Math.round(face.positionX/ratio);
 	face.positionY = Math.round(face.positionY/ratio);
 
@@ -154,6 +154,9 @@ Template.faceTaggingOutput.helpers({
 			str= str+identity.subType[i] +' ';
 		}
 		return str;
+	},
+	notManyFaces: function(){ //becomes cluttered with too many faces
+		return Faces.find().count()<3;
 	}
 });
 

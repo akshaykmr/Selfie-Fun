@@ -1,11 +1,12 @@
 .face-tagging{
    height: 40%;
+   max-height: 580px;
    background-color: #fdc233;
 }
 
-.login{
-   height: 60% ;
+.trending{
    background-color: #138fc8;
+   min-height: 400px;
 }
 
 .header-text{
@@ -21,3 +22,7 @@
    height: auto;
 
 }
+
+/*#faceTagging {
+  -webkit-animation-duration: 0.4s;
+}*/

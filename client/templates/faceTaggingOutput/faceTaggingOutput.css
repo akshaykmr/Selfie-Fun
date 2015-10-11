@@ -48,3 +48,11 @@
 .name{
 	color: #99e9ff;
 }
+
+.light-text{
+	color: gray;
+}
+
+.h-space{
+	padding-left: 40px;
+}

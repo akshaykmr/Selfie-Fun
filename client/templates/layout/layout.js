@@ -10,5 +10,8 @@ Template.layout.helpers({
 	},
 	faceTaggingOutput: function(){
 		return Router.current().route.getName()==='faceTaggingOutput';
+	},
+	home: function(){
+		return !Router.current().route.getName();
 	}
 });
