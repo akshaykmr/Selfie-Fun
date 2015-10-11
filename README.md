@@ -35,5 +35,6 @@ You can access the app on chrome localhost:3000 just make window mobile sized.
 * meteoric:ionicons-sass
 * meteoric:ionic
 * alchemy   wrap alcehmy api for meteor
+* meteorhacks:npm
 
 Loading animation from: http://tobiasahlin.com/spinkit/
