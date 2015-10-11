@@ -6,15 +6,18 @@
 Make sure meteor is installed.
 To run first clone the repo.
 
-run on simulator
-$ meteor run ios  
+run on simulator.
 
-run on device
-$ meteor run ios-device
+>$ meteor run ios  
+
+run on device.
+
+>$ meteor run ios-device
 
 If you dont have ios you can android as platform as well. I didn't have the sdk installed.
-$ meteor add-platform android
-$ meteor run android
+
+>$ meteor add-platform android
+>$ meteor run android
 
 You can access the app on chrome localhost:3000 just make window mobile sized.
 
