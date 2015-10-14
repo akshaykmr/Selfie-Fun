@@ -1,7 +1,7 @@
 # Selfie-Fun
 ###Cordova Mobile app for detecting and analyzing faces in your photos made with Meteor and alchemy vision api.
 
-#####demo video: https://youtu.be/XF9RQYSNbFU
+####demo video: https://youtu.be/XF9RQYSNbFU
 
 Make sure meteor is installed.
 To run first clone the repo.
@@ -21,6 +21,24 @@ If you dont have ios you can android as platform as well. I didn't have the sdk 
 
 You can access the app on chrome localhost:3000 just make window mobile sized.
 
+####Note: if you want to use save feature and twitter login
+
+create a new file in 'server' 
+
+>server/socialConfig.js
+
+```javascript
+	ServiceConfiguration.configurations.remove({
+	  service: "twitter"
+	});
+
+	ServiceConfiguration.configurations.insert({
+	  service: "twitter",
+	  consumerKey: "your consumer key from twitter",
+	  secret: "secret"
+	});
+```
+
 ####Meteor packages used
 
 * meteorhacks:async
@@ -38,3 +56,7 @@ You can access the app on chrome localhost:3000 just make window mobile sized.
 * meteorhacks:npm
 
 Loading animation from: http://tobiasahlin.com/spinkit/
+
+
+
+ 
