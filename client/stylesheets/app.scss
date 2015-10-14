@@ -1,10 +1,10 @@
 $positive: #1C3649;
 $loading-font-size: 22px;
 
-@import '.meteor/local/build/programs/server/assets/packages/meteoric_ionic-sass/ionic';
+@import 'client/stylesheets/meteoric_ionic-sass/ionic';
 @import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
 
-@import '.meteor/local/build/programs/server/assets/packages/meteoric_ionicons-sass/_ionicons';
+@import 'client/stylesheets/meteoric_ionicons-sass/_ionicons';
 
 .ionic-body.platform-android {
   font-family: "Roboto", sans-serif;
