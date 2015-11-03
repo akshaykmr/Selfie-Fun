@@ -1,5 +1,6 @@
-# Selfie-Fun
-###Cordova Mobile app for detecting and analyzing faces in your photos made with Meteor and alchemy vision api.
+###Selfie-Fun
+####built for meteor 2015 hackathon
+#####Cordova Mobile app for detecting and analyzing faces in your photos made with Meteor and alchemy vision api.
 
 ####demo video: https://youtu.be/XF9RQYSNbFU
 
