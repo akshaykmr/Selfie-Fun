@@ -1,24 +1,42 @@
 ###Selfie-Fun
-####built for meteor 2015 hackathon
+
+##Demo video: https://youtu.be/XF9RQYSNbFU
+
+####built for meteor 2015 hackathon [devpost](http://devpost.com/software/selfie-fun-swpl4k)
+
 #####Cordova Mobile app for detecting and analyzing faces in your photos made with Meteor and alchemy vision api.
 
-####demo video: https://youtu.be/XF9RQYSNbFU
+#####Screenshots
+
+<img src="http://imgur.com/4Nb2cwJ">
+
+<img src="http://imgur.com/WsdoTQP">
+
+<img src="http://imgur.com/GDsfmJf">
+
+<img src="http://imgur.com/LLBm4x2">
+
+
+
+
+
+
 
 Make sure meteor is installed.
 To run first clone the repo.
 
-run on simulator.
+`running on simulator`
 
->$ meteor run ios  
+`$ meteor run ios`
 
-run on device.
+running on device.
 
->$ meteor run ios-device
+`$ meteor run ios-device`
 
 If you dont have ios you can android as platform as well. I didn't have the sdk installed.
 
->$ meteor add-platform android
->$ meteor run android
+`$ meteor add-platform android`
+`$ meteor run android`
 
 You can access the app on chrome localhost:3000 just make window mobile sized.
 
