@@ -8,13 +8,15 @@
 
 #####Screenshots
 
-<img src="http://imgur.com/4Nb2cwJ">
+<img src="http://imgur.com/4Nb2cwJ.jpg">
 
-<img src="http://imgur.com/WsdoTQP">
+<img src="http://imgur.com/WsdoTQP.jpg">
 
-<img src="http://imgur.com/GDsfmJf">
+<img src="http://imgur.com/GDsfmJf.jpg">
 
-<img src="http://imgur.com/LLBm4x2">
+<img src="http://imgur.com/ew2AQzb.jpg">
+
+
 
 
 
